@@ -1,0 +1,16 @@
+[project]
+name = "es9-mcp"
+version = "0.1.0"
+description = "MCP server for controlling Expert Sleepers ES-9 Eurorack USB audio interface"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.0.0",
+    "python-rtmidi>=1.5.0",
+    "python-dotenv>=1.0.0",
+    "sounddevice>=0.5.0",
+    "numpy>=1.24.0",
+]
+
+[project.scripts]
+es9-mcp = "server:main"
